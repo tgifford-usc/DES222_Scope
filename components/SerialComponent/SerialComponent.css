@@ -1,0 +1,165 @@
+.vertical-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-panel {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#customSerialMainStrip {    
+    margin-bottom: 10px;
+    font-family: var(--title-panel-font-family, Verdana, Geneva, Tahoma, sans-serif);
+    font-size: var(--title-panel-font-size, 16px);
+    color: var(--title-panel-color, aliceblue);
+}
+
+
+#customSerialMainPanel {    
+    background-color:  var(--main-panel-background-color,rgb(19, 18, 18));
+    color: var(--main-panel-color, aliceblue);
+    font-family: var(--main-panel-font-family, Verdana, Geneva, Tahoma, sans-serif);
+    align-items: stretch;
+    margin: var(--main-panel-margin, 10px);
+    border-style: var(--main-panel-border-style, solid);
+    border-color: var(--main-panel-border-color, rgb(111, 110, 110));
+    padding: var(--main-panel-padding, 5px);
+}
+
+
+/* allows for external override of send and receive panel displays */
+#customSerialSendPanel {
+    display: var(--send-panel-display, flex);
+}
+
+#customSerialReceivePanel {
+    display: var(--receive-panel-display, flex);
+}
+
+#customSerialSendSubPanel {    
+    align-items: center;
+}
+
+#customSerialLogPanel {    
+    display: var(--log-panel-display, none);
+}
+
+.disabled {
+    display: var(--disabled-display, none);
+}
+
+.port-toggle {
+    min-width: 75px;
+    min-height: 30px;
+}
+
+
+.toggled-on {
+    margin: var(--toggle-button-margin, 10px);
+    background-color: var(--toggle-button-on-color, rgb(44, 104, 46)); /* Green */
+    border-style: var(--toggle-button-on-border-style, none);
+    border-color: var(--toggle-button-on-border-color, rgb(44, 104, 46));
+    color: var(--toggle-button-on-font-color, white);
+    padding: var(--toggle-button-padding, 15px 32px);
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: var(--toggle-button-on-font-size, 16px);
+    border-radius: var(--toggle-button-border-radius, 5%);
+}
+
+
+.toggled-off {
+    background-color: var(--toggle-button-off-color, rgb(111, 27, 27));  /* Red */
+    margin: var(--toggle-button-margin, 10px);
+    border-style: var(--toggle-button-off-border-style, none);
+    border-color: var(--toggle-button-off-border-color, rgb(111, 27, 27));
+    color: var(--toggle-button-off-font-color, white);
+    padding: var(--toggle-button-padding, 15px 32px);
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: var(--toggle-button-off-font-size, 16px);
+    border-radius: var(--toggle-button-border-radius, 5%);
+}
+
+.serial-send-button {
+    background-color: rgb(72, 39, 163);
+    margin: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5%;
+}
+
+
+.serial-send-textbox {
+    border-style: solid;
+    border-color: rgb(71, 64, 55);
+    background-color: rgb(25, 3, 83);
+    color: aliceblue;
+    padding: 10px;
+    font-size: 16px;
+    height: 50px;
+}
+
+
+.custom-serial-panel {
+    background-color: var(--sub-panel-background-color, rgb(45, 41, 41));
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-serial-panel-label {
+    font-size: 12px;
+    text-align: center;
+}
+
+.custom-serial-readout {
+    border-style: solid;
+    border-color: rgb(71, 64, 55);
+    background-color: rgb(10, 11, 10);
+    min-width: 150px;
+    min-height: 50px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* .main-label {
+    padding: 10px 10px 10px 10px;
+    font-size: 24px;
+} */
+
+.title-panel-collapsed {
+    align-items: center;
+    border-style: var(--title-panel-border-style, solid);
+    border-color:var(--title-panel-border-color, rgb(118, 28, 28));
+}
+
+.title-panel-expanded {
+    align-items: center;
+    border-style: none;
+}
+
+.expand-collapse-button {
+    background-color: var(--expand-button-background-color, rgb(72, 39, 163));
+    margin: 10px;
+    border: none;
+    color: var(--expand-button-text-color, white);
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 5%;
+}

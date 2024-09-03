@@ -1,0 +1,72 @@
+
+/* this allows for customising the layout of parts of the Microbit panel
+ * for example, hiding parts of the panel that aren't relevant */
+ custom-serial {    
+    /* set this to 'none' to hide the send panel, or 'flex' to show it */
+    --send-panel-display: flex;
+    
+    /* set this to 'none' to hide the receive panel, or 'flex' to show it */
+    --receive-panel-display: flex;
+
+    /* set this to 'none' to hide the log panel, or 'flex' to show it */
+    --log-panel-display: none;
+    
+
+    /* these styles apply to the collapsed microbit component */
+    /* --title-panel-color: rgb(250, 249, 249);
+    --title-panel-border-style: none;
+    --title-panel-border-color: white;
+    --title-panel-font-family: sans-serif;
+    --title-panel-font-size: 10px;
+    --expand-button-background-color: rgb(72, 39, 163);
+    --expand-button-text-color: white; */
+
+    /* these styles apply to the expanded microbit component */
+    /* --main-panel-background-color: rgb(20, 20, 20);
+    --main-panel-color: white;
+    --main-panel-font-family: sans-serif;
+    --main-panel-margin: 10px;
+    --main-panel-border-style: none;
+    --main-panel-border-color: rgb(111, 110, 110);
+    --main-panel-padding: px;
+    --sub-panel-background-color: rgb(20, 20, 20); */
+    
+    /* these allow styling of toggle buttons */
+    /* --toggle-button-panel-color: rgb(20, 20, 20);
+    --toggle-button-margin: 5px;
+    --toggle-button-border-radius: 5%;
+    --toggle-button-padding: 5px 5px; */
+    
+    /* and these allow styling of toggle buttons when toggled on */
+    /* --toggle-button-on-color: #08680c;
+    --toggle-button-on-border-style: none;
+    --toggle-button-on-border-color: white;
+    --toggle-button-on-font-color: white;
+    --toggle-button-on-font-family: san-serif;
+    --toggle-button-on-font-size: 16px; */
+    
+    /* and these allow styling of toggle buttons when toggled off */
+    /* --toggle-button-off-color: rgb(100, 6, 6);
+    --toggle-button-off-border-style: none;
+    --toggle-button-off-border-color: yellow;
+    --toggle-button-off-font-color: white;
+    --toggle-button-off-font-family: san-serif;
+    --toggle-button-off-font-size: 16px;    */
+
+}
+
+
+/* over-ride styles for the Custom Midi Component */
+/*
+custom-midi {
+
+} 
+*/
+
+
+/* over-ride styles for the Custom Graphics Component */
+/* 
+custom-graphics {
+
+} 
+*/
